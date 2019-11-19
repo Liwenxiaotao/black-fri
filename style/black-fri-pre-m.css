@@ -1,0 +1,789 @@
+@keyframes aniOpaciy {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+.siteBody_inner {
+  position: relative;
+}
+.promoBanner:after {
+  position: absolute;
+  bottom: -0.0667rem /* 5/75 */;
+  content: '';
+  width: 10rem /* 750/75 */;
+  height: 615px /* 615/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/banner-highlight.png') no-repeat top center / 100% auto;
+  opacity: 0;
+  animation: aniOpaciy 2.5s linear infinite;
+}
+.promoClock {
+  z-index: 3;
+  bottom: 0;
+  top: 3.2667rem /* 245/75 */;
+  width: 10rem /* 750/75 */;
+  height: 1.12rem /* 84/75 */;
+  background: none;
+}
+.promoClock .promoClock_timer {
+  height: 1.0667rem /* 80/75 */;
+}
+.promoClock dt {
+  display: none;
+}
+.promoClock .promoClock_timer {
+  margin-top: -0.1333rem /* 10/75 */;
+}
+.promoClock dd {
+  font-size: 0.2667rem /* 20/75 */;
+  color: #77b0e7;
+}
+.promoClock dd em {
+  margin: 0 0.2rem /* 15/75 */;
+  padding-top: 0.0667rem /* 5/75 */;
+  width: 1.0667rem /* 80/75 */;
+  height: 1.0667rem /* 80/75 */;
+  background: none;
+  color: #f9d3c0;
+  font-size: 0.4rem /* 30/75 */;
+  background: no-repeat top center / 100% auto;
+}
+.promoClock dd em:nth-child(1) {
+  background-image: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/day.png');
+}
+.promoClock dd em:nth-child(2) {
+  background-image: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/hour.png');
+}
+.promoClock dd em:nth-child(3) {
+  background-image: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/min.png');
+}
+.promoClock dd em:nth-child(4) {
+  background-image: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/sec.png');
+}
+.promoMarquee {
+  position: absolute;
+  bottom: 0;
+  top: 10.2rem /* 765/75 */;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-left: 0.4rem /* 30/75 */;
+  width: 636px /* 627/75 */;
+  height: 0.6rem /* 45/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/msgscroll-bg.png') no-repeat top center / 8.36rem /* 627/75 */ auto;
+}
+.promoMarquee a span {
+  height: 0.6rem /* 45/75 */ !important;
+  line-height: 0.6rem /* 45/75 */ !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 0.2667rem /* 20/75 */;
+}
+.promoMarquee .swiper-slide span {
+  font-size: 0.3333rem /* 25/75 */;
+}
+.promoModule_item {
+  margin-bottom: 0.4rem /* 30/75 */;
+}
+.promoModule_title {
+  margin: 0 auto;
+  width: 9.56rem /* 717/75 */;
+  height: 1.0133rem /* 76/75 */;
+  line-height: 1.0133rem /* 76/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/title-bg.png') no-repeat center center / 100% auto;
+  color: #fff;
+  font-size: 0.4267rem /* 32/75 */;
+  font-weight: normal;
+}
+.pmMultiGoods_groupTitle {
+  display: none;
+}
+.pmBanner_container {
+  margin-top: 0.1333rem /* 10/75 */;
+}
+.pmMultiGoods_container {
+  margin-top: -0.1333rem /* 10/75 */;
+}
+.newPmGoodsItem_btn,
+.pmGoodsItem_btn {
+  background: #fed130;
+  color: #212121;
+}
+.newPmGoodsItem_btn .toCart .newCartIcon,
+.pmGoodsItem_btn .toCart .newCartIcon,
+.newPmGoodsItem_btn .pmGoodsItem_curPrice,
+.pmGoodsItem_btn .pmGoodsItem_curPrice {
+  color: #212121 !important;
+  fill: #212121;
+}
+.promoModule_viewAll,
+.promoModule_viewMore {
+  display: block;
+  padding-top: 0.1333rem /* 10/75 */;
+  width: 100%;
+  height: 1.0667rem /* 80/75 */;
+  text-align: center;
+}
+.promoModule_viewAll a,
+.promoModule_viewMore a {
+  display: inline-block;
+  padding: 0.08rem /* 6/75 */ 0.2667rem /* 20/75 */;
+  line-height: 0.6133rem /* 46/75 */;
+  background: #fed130;
+  position: static;
+  border-radius: 0.0667rem /* 5/75 */;
+  transform: none;
+}
+.promoModule_viewAll i,
+.promoModule_viewMore i {
+  margin-left: 0;
+  top: 0.0667rem /* 5/75 */;
+}
+.promoModule_viewAll-top {
+  vertical-align: middle;
+  width: auto;
+  height: 0.5333rem /* 40/75 */;
+  line-height: initial;
+}
+.promoModule_viewAll-top a {
+  padding: 0;
+  display: block;
+  position: static;
+  line-height: initial;
+}
+.promoModule_viewAll-top a .icon-arrow_tiny {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.48rem /* 36/75 */;
+  height: 0.48rem /* 36/75 */;
+  border-color: #b6d5f8;
+  color: #b6d5f8;
+}
+.newPmGoodsItem_discount,
+.pmGoodsItem_discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff6701;
+  color: #fff;
+  width: 0.9333rem /* 70/75 */;
+  height: 0.9333rem /* 70/75 */;
+}
+.newPmGoodsItem_discount .inner,
+.pmGoodsItem_discount .inner {
+  line-height: initial;
+  font-size: 0.2933rem /* 22/75 */;
+}
+.newPmGoodsItem_discount .discoutContent_text,
+.pmGoodsItem_discount .discoutContent_text {
+  font-size: 0.2667rem /* 20/75 */;
+}
+.pmMultiGoodsList {
+  padding-bottom: 0;
+}
+.pmMultiGoods_container .navigate {
+  margin: 0.1333rem /* 10/75 */ 0.2667rem /* 20/75 */ -0.2rem /* 15/75 */;
+}
+.pmMultiGoods_container .navigate .navigateInner {
+  justify-content: space-between;
+}
+.pmMultiGoods_container .navigate .case.navigateCase {
+  margin-right: 0.1333rem /* 10/75 */;
+  height: 1.2rem /* 90/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/multi-tab-bg.png') no-repeat center center / auto 100%;
+  border-radius: 0.0667rem /* 5/75 */;
+  color: #fff;
+  font-size: 0.3733rem /* 28/75 */;
+  width: 0.1333rem /* 10/75 */;
+}
+.pmMultiGoods_container .navigate .case.navigateCase.on {
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/multi-tab-active-bg.png') no-repeat center center / auto 100%;
+  color: #544500;
+}
+.pmMultiGoods_container .navigate .case.navigateCase .navigateText {
+  max-height: 1.2rem /* 90/75 */;
+  height: 1.2rem /* 90/75 */;
+  line-height: 1.2rem /* 90/75 */;
+}
+.pmMultiGoods_container .navigate .case.navigateCase:last-of-type {
+  margin-right: 0;
+}
+.pmMultiGoods_container .navigate .case.navigateCase:after {
+  display: none;
+}
+.pmMultiGoods_container .navigate .case:before {
+  display: none;
+}
+.js-lazyModule.no-title .promoModule_title {
+  display: none;
+}
+.promoModule_content {
+  margin-top: 0.1333rem /* 10/75 */;
+}
+.promoModule_content .pmCoupon_head,
+.promoModule_content .pmCoupon_btn {
+  background-color: #f8ce06;
+  border-color: #f8ce06;
+  color: #333;
+}
+.promoModule_content .pmCoupon_timer i {
+  color: #f8ce06;
+}
+.promoModule_content .pmCoupon_timer em {
+  color: #333;
+}
+.promoModule_content .pmCoupon_progress .bar i {
+  background-color: #f8ce06;
+}
+.promoModule_content .pmCoupon_progress .text {
+  color: #333;
+}
+.promoNav .navigate {
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/floatnav-active-bg.png') no-repeat center center / auto 100%;
+}
+.promoNav .navigate .case span {
+  color: #fff;
+  font-size: 0.3467rem /* 26/75 */;
+}
+.promoNav .navigate .case.on span {
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/multi-tab-active-bg.png') no-repeat center center / auto 100%;
+  color: #6d5c1a;
+}
+.promoNav .navigateBtn_toggle {
+  border-left: none;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/multi-tab-active-bg.png') no-repeat center center / auto 100%;
+}
+.promoNav .navigateBtn_toggle .icon-arrow_up {
+  color: #212121;
+}
+.promoNav .panel .case.on {
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/multi-tab-active-bg.png') no-repeat center center / auto 100%;
+  color: #212121;
+}
+.floatButton-item {
+  background: #52a0da;
+}
+@keyframes grayMove {
+  0%,
+  75% {
+    left: 2.6667rem /* 200/75 */;
+  }
+  100% {
+    left: -2.1333rem /* 160/75 */;
+  }
+}
+.promoModule_content.pmActivitySignIn_container {
+  padding: 0.4533rem /* 34/75 */ 0.5333rem /* 40/75 */ 0;
+  margin-top: 0.0667rem /* 5/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signin-wrap-bg.png') no-repeat top center / 9.76rem /* 732/75 */ auto;
+  border: none;
+  height: 4.7867rem /* 359/75 */;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_subTitle {
+  position: absolute;
+  top: 2.5333rem /* 190/75 */;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 9.0667rem /* 680/75 */;
+  text-align: center;
+  color: #a4b6e4;
+  font-size: 0.2933rem /* 22/75 */;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_rule {
+  padding-left: 0.4rem /* 30/75 */;
+  top: -0.83rem /* 30/75 */;
+  right: 0.6667rem /* 50/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-question.png') no-repeat left center / 0.2933rem /* 22/75 */ auto;
+  box-shadow: none;
+  text-decoration: underline;
+  font-size: 0.2933rem /* 22/75 */;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_schedule {
+  overflow: hidden;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem {
+  height: 1.8533rem /* 139/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signitem-bg.png') no-repeat top center / 100% auto;
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasChecked:before,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasforgot:before {
+  display: none;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasforgot {
+  background-image: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signitem-miss-bg.png');
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasforgot .pmActivitySignIn_scheduleItemBg {
+  background-image: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signitem-miss-img.png');
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasforgot:after {
+  display: none;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.todayChecked {
+  background-image: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signitem-success-bg.png');
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.todayChecked .pmActivitySignIn_scheduleItemBg {
+  background-image: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signitem-succes-img.png');
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.todayChecked .pmActivitySignIn_scheduleItemDay {
+  color: #fff;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.todayChecked:after {
+  display: none;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem[data-is-today="1"]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -0.6rem /* 120/75 */;
+  width: 0;
+  height: 2.6667rem /* 200/75 */;
+  box-shadow: 0 0 0.16rem /* 12/75 */ 0.0533rem /* 4/75 */ rgba(255, 255, 255, 0.6);
+  transform: rotate(-35deg);
+  animation: grayMove 2.2s linear infinite;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItemDay {
+  position: absolute;
+  top: 0;
+  padding-left: 0.0667rem /* 5/75 */;
+  font-size: 0.2933rem /* 22/75 */;
+  color: #fff;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItemBg {
+  position: relative;
+  margin: 0.6267rem /* 47/75 */ auto;
+  width: 0.88rem /* 66/75 */;
+  height: 0.8267rem /* 62/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signitem-img.png') no-repeat top center / 100%;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItemBg.pmActivitySignIn_scheduleItemBg-gift:after {
+  display: none;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItemBg:after {
+  position: absolute;
+  bottom: -0.3333rem /* 10/75 */;
+  left: -0.2267rem /* 17/75 */;
+  right: 0;
+  margin: auto;
+  width: 1.3333rem /* 100/75 */;
+  content: 'Points';
+  font-size: 0.24rem /* 18/75 */;
+  color: #eecc50;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btnDiv {
+  margin-top: 1.0667rem /* 80/75 */;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn {
+  width: 5.12rem /* 384/75 */;
+  height: 0.92rem /* 69/75 */;
+  line-height: 0.8667rem /* 65/75 */;
+  color: #5b4233;
+  font-size: 0.4rem /* 30/75 */;
+  font-weight: bold;
+  overflow: hidden;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn:after {
+  content: '';
+  margin-left: 0.2rem /* 15/75 */;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.1733rem /* 13/75 */;
+  height: 0.32rem /* 24/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-key.png') no-repeat center center / 100% auto;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.pmActivitySignIn_btn-sign {
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signbtn-bg.png') no-repeat top center / 100% auto;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-comingSoonBtn,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-alreadySignBtn,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-endBtn {
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signed-btn-bg.png') no-repeat top center / 100% auto;
+  color: #fff;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-comingSoonBtn:after,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-alreadySignBtn:after,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-endBtn:after {
+  display: none;
+}
+.pmActivitySignIn_closeDiv2 {
+  top: auto;
+  bottom: -2.2667rem /* 170/75 */;
+  width: 1.2267rem /* 92/75 */;
+  height: 1.2267rem /* 92/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-close.png') no-repeat center center / 100% auto;
+  border: none;
+}
+.pmActivitySignIn_closeDiv2:before {
+  display: none;
+}
+.pmActivitySignIn_loginContent {
+  padding-top: 2.5333rem /* 190/75 */;
+  height: 8.9867rem /* 674/75 */;
+  box-shadow: none;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/layerbg.png') no-repeat top center / 8.7867rem /* 659/75 */ 8.9867rem /* 674/75 */;
+}
+.pmActivitySignIn_loginContent:after {
+  content: '';
+  position: absolute;
+  margin-left: 0.2667rem /* 20/75 */;
+  top: 4.4rem /* 330/75 */;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2.2133rem /* 166/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/login-man.png') no-repeat top center / 1.2533rem /* 94/75 */ auto;
+}
+.pmActivitySignIn_loginTitle {
+  line-height: 1.4;
+  color: #fff;
+  font-size: 0.4rem /* 30/75 */;
+  text-shadow: none;
+}
+.pmActivitySignIn_loginBtn {
+  position: absolute;
+  bottom: 1.2rem /* 90/75 */;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5.12rem /* 384/75 */;
+  height: 0.92rem /* 69/75 */;
+  text-align: center;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/signbtn-bg.png') no-repeat top center / 5.12rem /* 384/75 */ auto;
+  box-shadow: none;
+}
+.pmActivitySignIn_iconRect {
+  border: none;
+  color: #242601;
+  font-size: 0.3467rem /* 26/75 */;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.1733rem /* 13/75 */;
+  height: 0.32rem /* 24/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-key.png') no-repeat center center / 100% auto;
+}
+.signIn_popRule {
+  box-shadow: none;
+}
+.pmActivitySignIn_ruleContent {
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/rulebg-c.png') repeat-y top center / 7.5067rem /* 563/75 */ auto;
+  box-shadow: none;
+  border: none;
+}
+.pmActivitySignIn_ruleContent:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: -0.6667rem /* 50/75 */;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7.8533rem /* 589/75 */;
+  height: 0.72rem /* 54/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/rulebg-t.png') no-repeat top center / 7.8533rem /* 589/75 */ auto;
+}
+.pmActivitySignIn_ruleContent:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  bottom: -1.0667rem /* 80/75 */;
+  left: 0;
+  right: 0;
+  margin-left: 0.5467rem /* 41/75 */;
+  width: 8.24rem /* 618/75 */;
+  height: 3rem /* 225/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/rulebg-b.png') no-repeat top center / 8.24rem /* 618/75 */ auto;
+}
+.pmActivitySignIn_ruleContent .pmActivitySignIn_ruleContentAll {
+  position: relative;
+  min-height: 4rem /* 300/75 */;
+  padding: 0.2667rem /* 20/75 */ 1.0667rem /* 80/75 */;
+  z-index: 3;
+  overflow: visible;
+}
+.pmActivitySignIn_ruleContent .pmActivitySignIn_ruleContentAll .pmActivitySignIn_ruleContentText {
+  overflow-y: auto;
+  max-height: 6.5rem;
+}
+.pmActivitySignIn_closeDiv {
+  top: auto;
+  bottom: -2.2667rem /* 170/75 */;
+  width: 1.2267rem /* 92/75 */;
+  height: 1.2267rem /* 92/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-close.png') no-repeat center center / 100% auto;
+  border: none;
+}
+.pmActivitySignIn_closeDiv:before {
+  display: none;
+}
+.pmActivitySignIn_award {
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/layerbg.png') no-repeat top center / 8.7867rem /* 659/75 */ 8.9867rem /* 674/75 */;
+}
+.pmActivitySignIn_award .pmActivitySignIn_awardTitle {
+  color: #fff;
+}
+.pmActivitySignIn_award .pmActivitySignIn_awardDetail {
+  color: #fff;
+}
+.pmActivitySignIn_award .pmActivitySignIn_awardImg {
+  margin-left: 0.1333rem /* 10/75 */;
+  margin-top: 0;
+}
+.pmActivitySignIn_award .pmActivitySignIn_awardImgDiv {
+  margin-bottom: 0;
+}
+.pmActivitySignIn_award .pmActivitySignIn_couponBtn {
+  width: 5.9733rem /* 448/75 */;
+  height: 1.28rem /* 96/75 */;
+  line-height: 1.28rem /* 96/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/layer-btn-bg.png') no-repeat top center / 5.9733rem /* 448/75 */ 1.28rem /* 96/75 */;
+  border: none;
+  color: #242601;
+  font-weight: normal;
+}
+.pmActivitySignIn_award .pmActivitySignIn_couponBtn:after {
+  content: '';
+  margin-left: 0.1333rem /* 10/75 */;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.1733rem /* 13/75 */;
+  height: 0.32rem /* 24/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-key.png') no-repeat center center / 100% auto;
+}
+.pmActivitySignIn_award .pmActivitySignIn_closeDiv2 {
+  bottom: -0.6667rem /* 50/75 */;
+}
+.credits_exchange_panel {
+  margin-bottom: 0.4rem /* 30/75 */;
+}
+.credits_exchange_panel .credits_exchange-header {
+  margin: 0.4rem /* 30/75 */ 0 0.08rem /* 6/75 */;
+}
+.credits_exchange_panel .promoModule_title {
+  line-height: 0.8667rem /* 65/75 */;
+  color: #fff;
+}
+.credits_exchange_panel.no-title .promoModule_title {
+  display: none;
+}
+.credits_exchange_panel .exchangeActivityRule {
+  top: 0.2267rem /* 17/75 */;
+  right: 0.6667rem /* 50/75 */;
+  color: #fff;
+}
+.credits_exchange_panel .exchangeLeft_num {
+  color: #404040;
+}
+.credits_exchange_panel .exchange_progressInner {
+  background: #ffd300;
+}
+.credits_exchange_panel .exchangeDoubleBtn {
+  background: #ffd300;
+  color: #333;
+}
+.credits_exchange_panel .exchangeStatusBox {
+  background-color: rgba(248, 206, 6, 0.6);
+  color: #000;
+}
+.exchangeRuleWrap {
+  background: none;
+  padding: 0;
+}
+.exchangeRuleWrap .exchangeRuleTitle {
+  color: #fff;
+}
+.exchangeRuleWrap .exchangeRuleText {
+  padding: 0 0.8rem /* 60/75 */ 0 0.9333rem /* 70/75 */;
+  border-top: none;
+  color: #fff;
+}
+.exchangeRuleWrap .exchangeRuleTitle,
+.exchangeRuleWrap .exchangeRuleText {
+  position: relative;
+  z-index: 3;
+}
+.exchangeRuleWrap .exchangeClose {
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -2.2rem;
+  width: 1.2267rem /* 92/75 */;
+  height: 1.2267rem /* 92/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-close.png') no-repeat center center / 100% auto;
+}
+.exchangeRuleWrap .exchangeClose .icon-closed {
+  font-size: 0;
+}
+.exchangeRuleWrap .layui-m-layercont {
+  min-height: 2rem;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/rulebg-c.png') repeat-y top center / 7.5067rem /* 563/75 */ auto;
+  box-shadow: none;
+  border: none;
+}
+.exchangeRuleWrap .layui-m-layercont:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: -0.6667rem /* 50/75 */;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7.8533rem /* 589/75 */;
+  height: 0.72rem /* 54/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/rulebg-t.png') no-repeat top center / 7.8533rem /* 589/75 */ auto;
+}
+.exchangeRuleWrap .layui-m-layercont:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  bottom: -1.0667rem /* 80/75 */;
+  left: 0;
+  right: 0;
+  margin-left: 0.5467rem /* 41/75 */;
+  width: 8.24rem /* 618/75 */;
+  height: 3rem /* 225/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/rulebg-b.png') no-repeat top center / 8.24rem /* 618/75 */ auto;
+}
+.exchangeRuleWrap .layui-m-layercont > div {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+}
+.exchangeRuleWrap .layui-m-layercont:after {
+  margin-left: 0.3467rem /* 26/75 */;
+}
+.pmJoinPointsTreasure .promoModule_title {
+  margin-bottom: 0.08rem /* 6/75 */;
+}
+.pmJoinPointsTreasure .joinPointsRule {
+  top: 0.2667rem /* 20/75 */;
+  right: 0.5333rem /* 40/75 */;
+}
+.pmJoinPointsTreasure .joinPoints_timerText .cutdownTime {
+  color: #fed300;
+}
+.pmJoinPointsTreasure .joinPoints_progressText em {
+  color: #404040;
+}
+.pmJoinPointsTreasure .joinPoints_progressBar i {
+  background: #ffd102;
+}
+.pmJoinPointsTreasure .joinPointsPriceWrap .joinPointsPrice {
+  color: #ffd300;
+}
+.pmJoinPointsTreasure .joinPointsBtn {
+  background: #ffd300;
+  color: #333;
+}
+.pmJoinPointsTreasure .treasure-info-btn-wrap {
+  display: none;
+}
+.pmJoinPointsTreasure .treasure-subscribe-wrap {
+  display: none;
+}
+.joinPointsRuleWrap {
+  padding: 0 0.26rem;
+  background: none;
+}
+.joinPointsRuleWrap .joinPointsRuleTitle,
+.joinPointsRuleWrap .joinPointsLayerCont,
+.joinPointsRuleWrap .joinPointsRuleText {
+  position: relative;
+  z-index: 3;
+  border: none;
+}
+.joinPointsRuleWrap .joinPointsRuleTitle,
+.joinPointsRuleWrap .joinPointsRuleText {
+  display: block;
+  width: auto;
+  color: #fff;
+}
+.joinPointsRuleWrap .joinPointsRuleTitle dl,
+.joinPointsRuleWrap .joinPointsRuleText dl {
+  color: #fff;
+}
+.joinPointsRuleWrap .joinPointsLayerCont {
+  max-height: 6rem;
+}
+.joinPointsRuleWrap .activityRuleText,
+.joinPointsRuleWrap .activityRuleTitle {
+  color: #fff;
+}
+.joinPointsRuleWrap .layui-m-layercont {
+  padding: 0.2rem 0.8rem;
+  min-height: 2rem;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/rulebg-c.png') repeat-y top center / 7.5067rem /* 563/75 */ auto;
+  box-shadow: none;
+  border: none;
+}
+.joinPointsRuleWrap .layui-m-layercont:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: -0.6667rem /* 50/75 */;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7.8533rem /* 589/75 */;
+  height: 0.72rem /* 54/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/rulebg-t.png') no-repeat top center / 7.8533rem /* 589/75 */ auto;
+}
+.joinPointsRuleWrap .layui-m-layercont:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  bottom: -1.0667rem /* 80/75 */;
+  left: 0;
+  right: 0;
+  margin-left: 0.5467rem /* 41/75 */;
+  width: 8.24rem /* 618/75 */;
+  height: 3rem /* 225/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/rulebg-b.png') no-repeat top center / 8.24rem /* 618/75 */ auto;
+}
+.joinPointsRuleWrap .layui-m-layercont:after {
+  margin-left: 0.3467rem /* 26/75 */;
+}
+.joinPointsRuleWrap .oinPointsDl {
+  display: table;
+}
+.joinPointsRuleWrap .oinPointsDt {
+  width: 3rem;
+  vertical-align: top;
+}
+.joinPointsRuleWrap .oinPointsDd {
+  display: table-cell;
+  vertical-align: top;
+  white-space: pre-wrap;
+}
+.joinPointsRuleWrap .joinPointsClose {
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -2.5rem;
+  width: 1.2267rem /* 92/75 */;
+  height: 1.2267rem /* 92/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-close.png') no-repeat center center / 100% auto;
+}
+.joinPointsRuleWrap .joinPointsClose .icon-closed {
+  font-size: 0;
+}
+.joinPointsRuleWrap .layer-statusContent2 {
+  position: relative;
+  z-index: 3;
+}
+.lazyModule_content.hasTitle .pmMultiGoods_content,
+.lazyModule_content.hasTitle .pmMultiGoodsList {
+  padding-top: 0;
+}
+.lazyModule_content.hasTitle p.price span {
+  color: #ff6701;
+}

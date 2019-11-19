@@ -1,0 +1,7 @@
+{
+    "cssrem.autoRemovePrefixZero": false,
+    "cssrem.fixedDigits": 4,
+    "cssrem.rootFontSize": 75,
+    "px2rem-plus.precision": 4,
+    "px2rem-plus.twoWayConversion": true
+}

@@ -1,0 +1,852 @@
+.siteBody_inner {
+  position: relative;
+}
+/*倒计时*/
+.promoClock {
+  z-index: 3;
+  top: 3.3333rem /* 250/75 */;
+  width: 10rem /* 750/75 */;
+  height: 0.9867rem /* 74/75 */;
+  background: none;
+}
+.promoClock .promoClock_timer {
+  height: 0.9867rem /* 74/75 */;
+}
+.promoClock dt {
+  display: none;
+}
+.promoClock dd {
+  font-size: 20px;
+  color: #FEDCA7;
+}
+.promoClock dd em {
+  margin: 0 0.2rem /* 15/75 */;
+  padding-top: 0.0667rem /* 5/75 */;
+  width: 0.9867rem /* 74/75 */;
+  height: 0.9867rem /* 74/75 */;
+  background: none;
+  color: #802D00;
+  font-size: 18px;
+  background: no-repeat top center / 100% auto;
+}
+.promoClock dd em:nth-child(1) {
+  background-image: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/day.png');
+}
+.promoClock dd em:nth-child(2) {
+  background-image: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/hour.png');
+}
+.promoClock dd em:nth-child(3) {
+  background-image: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/min.png');
+}
+.promoClock dd em:nth-child(4) {
+  background-image: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/sec.png');
+  margin-left: 0.0267rem;
+}
+/*跑马灯*/
+.promoMarquee {
+  position: absolute;
+  bottom: 0;
+  top: 9.0rem /* 675/75 */;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-left: 0.4rem /* 30/75 */;
+  width: 8.48rem /* 636/75 */;
+  height: 0.56rem /* 42/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/msgscroll-bg.png?refresh=1') no-repeat top center / 8.48rem /* 636/75 */ auto;
+  box-shadow: 0 15px 10px -7px #0c0b12;
+}
+.promoMarquee a span {
+  height: 0.56rem /* 42/75 */ !important;
+  line-height: 0.56rem /* 42/75 */ !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 10px;
+  color: #FED853;
+  font-weight:bold;
+}
+/*导航栏*/
+.promoNav .navigate {
+  background: linear-gradient(#444556, #22222A);
+}
+.promoNav .navigate .case span {
+  color: #fbe7c2;
+  font-size: 12px;
+}
+.promoNav .navigate .case.on span {
+  background: linear-gradient(#FEEACC, #FBCF86);
+  color: #231F2D;
+}
+.promoNav .navigateBtn_toggle {
+  border-left: none;
+  background: linear-gradient(#FEEACC, #FBCF86);
+}
+.promoNav .navigateBtn_toggle .icon-arrow_up {
+  color: #21202E;
+}
+.promoNav .panel .case.on {
+  background: linear-gradient(#FEEACC, #FBCF86);
+  color: #231F2D;
+}
+/*签到*/
+.promoModule_title {
+  margin: 0 auto;
+  color: #FFED9B;
+  font-size: 14px;
+  font-weight: normal;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  width: 9.5867rem;
+}
+@keyframes grayMove {
+  0%,
+  75% {
+    left: 2.6667rem /* 200/75 */;
+  }
+  100% {
+    left: -2.1333rem /* 160/75 */;
+  }
+}
+.pmActivitySignIn  {
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/checkin-bg-pc.png') no-repeat top center / 9.72rem /* 729/75 */ auto;
+  padding-top: 0.1333rem /* 10/75 */;
+}
+.promoModule_content.pmActivitySignIn_container {
+  padding: 0.3333rem /* 18/75 */ 0.4rem /* 7/75 */ 0;
+  margin-top: 0;
+  border: none;
+  height: 4.4rem /* 330/75 */;
+  background: none;
+  box-sizing: border-box;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_subTitle {
+  position: absolute;
+  top: 2.6133rem /* 196/75 */;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 9.0667rem /* 680/75 */;
+  text-align: center;
+  color: #E9CE72;
+  font-size: 10px;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_rule {
+  padding-left: 0.4rem /* 30/75 */;
+  top: -0.72rem /* 54/75 */;
+  right: 0.0667rem /* 50/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/icon-question.png') no-repeat left center / 0.2933rem /* 22/75 */ auto;
+  box-shadow: none;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_schedule {
+  overflow: hidden;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem {
+  height: 1.8533rem /* 139/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/signitem-bg.png') no-repeat top center / 100% auto;
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasChecked:before,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasforgot:before {
+  display: none;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasforgot {
+  background-image: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/signitem-miss-bg.png');
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasforgot .pmActivitySignIn_scheduleItemBg {
+  background-image: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/signitem-miss-img.png');
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.hasforgot:after {
+  display: none;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.todayChecked {
+  background-image: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/signitem-success-bg.png');
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.todayChecked .pmActivitySignIn_scheduleItemBg {
+  background-image: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/signitem-succes-img.png');
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.todayChecked .pmActivitySignIn_scheduleItemDay {
+  color: #fff;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.todayChecked:after {
+  display: none;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem[data-is-today="1"]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -0.6rem /* 120/75 */;
+  width: 0;
+  height: 2.6667rem /* 200/75 */;
+  box-shadow: 0 0 0.16rem /* 12/75 */ 0.0533rem /* 4/75 */ rgba(255, 255, 255, 0.6);
+  transform: rotate(-35deg);
+  animation: grayMove 2.2s linear infinite;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItemDay {
+  position: absolute;
+  top: 0;
+  font-size: 11px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItemBg {
+  position: relative;
+  margin: 0.6267rem /* 47/75 */ auto;
+  width: 0.7733rem /* 58/75 */;
+  height: 0.7733rem /* 58/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/signitem-img.png') no-repeat top center / 100%;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItemBg.pmActivitySignIn_scheduleItemBg-gift:after {
+  display: none;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItemBg:after {
+  position: absolute;
+  bottom: -0.3333rem /* 10/75 */;
+  left: -0.2267rem /* 17/75 */;
+  right: 0;
+  margin: auto;
+  width: 1.3333rem /* 100/75 */;
+  content: 'Points';
+  font-size: 0.24rem /* 18/75 */;
+  color: #EED453;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_scheduleItem.todayChecked .pmActivitySignIn_scheduleItemBg:after {
+  content: '';
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btnDiv {
+  margin-top: 1.0667rem /* 80/75 */;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn {
+  width: 3.7333rem /* 280/75 */;
+  height: 0.6667rem /* 50/75 */;
+  line-height: 0.6667rem /* 50/75 */;
+  color: #343443;
+  font-size: 11px;
+  overflow: hidden;
+  border-radius: 0.0267rem /* 2/75 */;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.pmActivitySignIn_btn-sign {
+  background: linear-gradient(#FEEACC, #FBCF86);
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-comingSoonBtn,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-alreadySignBtn,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-endBtn {
+  background: linear-gradient(#9b9bad, #656570);
+  color: #333339;
+}
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-comingSoonBtn:after,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-alreadySignBtn:after,
+.promoModule_content.pmActivitySignIn_container .pmActivitySignIn_btn.js-endBtn:after {
+  display: none;
+}
+
+/*登录弹框*/
+.pmActivitySignIn_closeDiv2 {
+  top: auto;
+  bottom: -1.0667rem /* 80/75 */;
+  width: 1.2267rem /* 92/75 */;
+  height: 1.2267rem /* 92/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-close.png') no-repeat center center / 100% auto;
+  border: none;
+}
+.pmActivitySignIn_closeDiv2:before {
+  display: none;
+}
+.pmActivitySignIn_loginContent {
+  padding-top: 2.5333rem /* 190/75 */;
+  height: 9.0667rem /* 680/75 */;
+  width: 100%;
+  box-shadow: none;
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191108_13730/signin-dialog-bg.png') no-repeat top center / 8.7867rem /* 660/75 */ auto;
+}
+.pmActivitySignIn_loginTitle {
+  line-height: 1.4;
+  color: #fff;
+  font-size: 0.4rem /* 30/75 */;
+  text-shadow: none;
+  padding: 1.0667rem 1.6rem 0;
+}
+.pmActivitySignIn_loginBtn {
+  position: absolute;
+  bottom: 1.4667rem /* 110/75 */;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5.3333rem /* 400/75 */;
+  height: 0.9333rem /* 70/75 */;
+  text-align: center;
+  background: linear-gradient(#EEDA86, #D39C21);
+  box-shadow: none;
+  border-radius: 0.4667rem;
+  color: #2F250C;
+  font-weight:bold;
+  border: none;
+}
+.pmActivitySignIn_iconRect {
+  display: none;
+}
+/*签到规则弹框*/
+.signIn_popRule {
+  box-shadow: none;
+}
+.pmActivitySignIn_ruleContent {
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191108_13730/rule-dialog-bg.png') no-repeat top center / 7.5067rem /* 563/75 */ auto;
+  border: none;
+  width: 7.5067rem /* 563/75 */;
+  height: 8.6267rem /*647/75*/;
+  z-index: 3;
+  box-shadow: 0 0 0.1333rem #9293b4;
+  box-sizing: border-box;
+  padding: 2.4rem /*180/75*/ 0 0.2667rem 0 /*20/75*/;
+}
+
+.pmActivitySignIn_ruleContentAll {
+  position: relative;
+  padding: 0.2667rem /*20/75*/ 0 0;
+}
+.pmActivitySignIn_ruleContentAll .pmActivitySignIn_ruleTitle {
+  color: #2a2b36;
+  text-align: center;
+}
+.pmActivitySignIn_ruleContentAll .pmActivitySignIn_ruleContentText {
+  overflow-y: auto;
+  max-height: 4.6667rem /*350*/;
+  color: #2a2b36;
+  padding: 0 0.4rem /*30/75*/;
+}
+.pmActivitySignIn_closeDiv {
+  top: auto;
+  bottom: -1.6rem /* 120/75 */;
+  width: 1.2267rem /* 92/75 */;
+  height: 1.2267rem /* 92/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-close.png') no-repeat center center / 100% auto;
+  border: none;
+}
+.pmActivitySignIn_closeDiv:before {
+  display: none;
+}
+/*签到成功弹框*/
+.signIn_popAward {
+  width: 100%;
+}
+.pmActivitySignIn_award {
+  padding-top: 2.0667rem /* 155/75 */;
+  padding-left: 1.6rem;
+  padding-right: 1.8667rem;
+  height: 9.0667rem /* 680/75 */;
+  width: 100%;
+  box-shadow: none;
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191108_13730/signin-dialog-bg.png') no-repeat top center / 8.7867rem /* 660/75 */ auto;
+  box-sizing: border-box;
+}
+.pmActivitySignIn_award .pmActivitySignIn_awardTitle {
+  color: #fff;
+  width: auto;
+  margin: 0;
+}
+.pmActivitySignIn_award .pmActivitySignIn_awardDetail {
+  color: #fff;
+  width: auto;
+  margin: 0;
+  padding: 0 0.6667rem;
+}
+.pmActivitySignIn_award .pmActivitySignIn_awardImg {
+  margin-top: 0;
+}
+.pmActivitySignIn_award .pmActivitySignIn_awardImgDiv {
+  margin-bottom: 0;
+}
+.pmActivitySignIn_award .pmActivitySignIn_couponBtn {
+  position: absolute;
+  bottom: 1.4267rem /* 107/75 */;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5.3333rem /* 400/75 */;
+  height: 0.9333rem /* 70/75 */;
+  text-align: center;
+  background: linear-gradient(#EEDA86, #D39C21);
+  box-shadow: none;
+  border-radius: 0.4667rem;
+  color: #2F250C;
+  font-weight:bold;
+  border: none;
+}
+.pmActivitySignIn_award .pmActivitySignIn_closeDiv2 {
+  bottom: -1.0667rem /* 80/75 */;
+}
+
+/*版块公共样式*/
+.promoModule_item {
+  margin-bottom: 0.8rem /* 60/75 */;
+}
+.pmCoupon,
+.pmMultiGoods,
+.pmJoinPointsTreasure,
+.credits_exchange_panel,
+.pmNormal,
+.pmBanner-7 {
+  position: relative;
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/panel-bg-m.png') repeat-y center / 9.72rem auto;
+}
+.pmCoupon:after,
+.pmMultiGoods:after,
+.pmJoinPointsTreasure:after,
+.credits_exchange_panel:after,
+.pmNormal:after,
+.pmBanner-7:after,
+.pmCoupon:before,
+.pmMultiGoods:before,
+.pmJoinPointsTreasure:before,
+.credits_exchange_panel:before,
+.pmNormal:before,
+.pmBanner-7:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.pmCoupon:before,
+.pmMultiGoods:before,
+.pmJoinPointsTreasure:before,
+.credits_exchange_panel:before,
+.pmNormal:before,
+.pmBanner-7:before {
+  top: -0.2rem /*15/75*/;
+  height: 0.28rem /*21/75*/;
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/panel-bg-t.png') no-repeat center top / 9.72rem auto;
+}
+.pmCoupon:after,
+.pmMultiGoods:after,
+.pmJoinPointsTreasure:after,
+.credits_exchange_panel:after,
+.pmNormal:after,
+.pmBanner-7:after{
+  bottom: -0.2rem /*15/75*/;
+  height: 0.28rem /*21/75*/;
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/panel-bg-b.png') no-repeat center bottom / 9.72rem auto;
+  z-index: 0;
+}
+.pmBanner-2,
+.pmBanner-1{
+  padding-top: 0.2rem /* 15/75 */;
+}
+/*普通商品*/
+.pmActivitySignIn {
+  margin-bottom: 0.6rem /*45/75*/;
+}
+.pmMultiGoods_groupTitle {
+  display: none;
+}
+.pmBanner_container {
+  margin-top: 0.1333rem /* 10/75 */;
+}
+.pmMultiGoods_container {
+  margin-top: -0.1333rem /* 10/75 */;
+}
+.newPmGoodsItem_btn,
+.pmGoodsItem_btn {
+  background: #FED190;
+  color: #231F2D;
+}
+.newPmGoodsItem_btn .toCart .newCartIcon,
+.pmGoodsItem_btn .toCart .newCartIcon,
+.newPmGoodsItem_btn .pmGoodsItem_curPrice,
+.pmGoodsItem_btn .pmGoodsItem_curPrice {
+  color: #231F2D !important;
+  fill: #231F2D;
+}
+.promoModule_viewAll,
+.promoModule_viewMore {
+  display: block;
+  padding-top: 0.1333rem /* 10/75 */;
+  width: 100%;
+  height: 1.0667rem /* 80/75 */;
+  text-align: center;
+}
+.promoModule_viewAll a,
+.promoModule_viewMore a {
+  display: inline-block;
+  padding: 0.08rem /* 6/75 */ 0.2667rem /* 20/75 */;
+  line-height: 0.6133rem /* 46/75 */;
+  background: #FED190;
+  position: static;
+  border-radius: 0.0667rem /* 5/75 */;
+  transform: none;
+  font-weight: 400;
+}
+.promoModule_viewAll i,
+.promoModule_viewMore i {
+  margin-left: 0;
+  top: 0.0667rem /* 5/75 */;
+}
+.promoModule_viewAll-top {
+  vertical-align: middle;
+  width: auto;
+  height: 0.5333rem /* 40/75 */;
+  line-height: initial;
+}
+.promoModule_viewAll-top a {
+  padding: 0;
+  display: block;
+  position: static;
+  line-height: initial;
+}
+.promoModule_viewAll-top a .icon-arrow_tiny {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.48rem /* 36/75 */;
+  height: 0.48rem /* 36/75 */;
+  border-color: #FFED9B;
+  color: #FFED9B;
+}
+.newPmGoodsItem_discount,
+.pmGoodsItem_discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FED190;
+  color: #231F2D;
+  width: 0.9333rem /* 70/75 */;
+  height: 0.9333rem /* 70/75 */;
+}
+.newPmGoodsItem_discount .inner,
+.pmGoodsItem_discount .inner {
+  line-height: initial;
+  font-size: 0.2933rem /* 22/75 */;
+}
+.newPmGoodsItem_discount .discoutContent_text,
+.pmGoodsItem_discount .discoutContent_text {
+  font-size: 0.2667rem /* 20/75 */;
+}
+.pmMultiGoodsList {
+  padding-bottom: 0;
+}
+.newPmGoodsItem_progress .text .textSoldNum{
+  color: #231F2D;
+  font-weight: bold;
+}
+.newPmGoodsItem_progress .bar i {
+  background: #FED190;
+}
+.pmMultiGoods_container .navigate {
+  margin: 0.1333rem /* 10/75 */ 0.2667rem /* 20/75 */;
+}
+.pmMultiGoods_container .navigate .navigateInner {
+  justify-content: space-between;
+}
+.pmMultiGoods_container .navigate .case.navigateCase {
+  margin-right: 0.1333rem /* 10/75 */;
+  height: 1.2rem /* 90/75 */;
+  background: linear-gradient(#6E6673, #444556);
+  border-radius: 0.0667rem /* 5/75 */;
+  color: #FFE1B4;
+  font-size: 0.3733rem /* 28/75 */;
+  width: 0.1333rem /* 10/75 */;
+}
+.pmMultiGoods_container .navigate .case.navigateCase.on {
+  background: linear-gradient(#FEE6C2, #FCCB7B);
+  color: #231F2D;
+}
+.pmMultiGoods_container .navigate .case.navigateCase .navigateText {
+  max-height: 1.2rem /* 90/75 */;
+  height: 1.2rem /* 90/75 */;
+  line-height: 1.2rem /* 90/75 */;
+}
+.pmMultiGoods_container .navigate .case.navigateCase:last-of-type {
+  margin-right: 0;
+}
+.pmMultiGoods_container .navigate .case.navigateCase:after {
+  display: none;
+}
+.pmMultiGoods_container .navigate .case:before {
+  display: none;
+}
+.js-lazyModule.no-title .promoModule_title {
+  display: none;
+}
+/*coupon*/
+.promoModule_content {
+  margin-top: 0.1333rem /* 10/75 */;
+}
+.promoModule_content .pmCoupon_head,
+.promoModule_content .pmCoupon_btn {
+  background-color: #FED190;
+  border-color: #FED190;
+  color: #38323D;
+}
+.pmCoupon_btn.coupon-allTaken, .pmCoupon_btn.coupon-expired {
+    border-color: #ccc;
+    background-color: #ccc;
+    color: #fff;
+}
+.promoModule_content .pmCoupon_head {
+  position: relative;
+  border-radius: 0.1067rem /*8/75*/;
+  color: #221F31;
+}
+.promoModule_content .pmCoupon_timer:before {
+  position: absolute;
+  display: inline-block;
+  left: 0.1067rem /*8/75*/;
+  right: 0.1067rem /*8/75*/;
+  border-bottom: 2px dotted #FED190;
+  content:'';
+  top: -1px;
+  z-index: 3;
+}
+.promoModule_content .pmCoupon_timer {
+  position: relative;
+  border-top-left-radius: 0.1067rem /*8/75*/;
+  border-top-right-radius: 0.1067rem /*8/75*/;
+}
+.promoModule_content .pmCoupon_timer i {
+  color: #f8ce06;
+}
+.promoModule_content .pmCoupon_timer em {
+  color: #333;
+}
+.promoModule_content .pmCoupon_progress .bar {
+  border: 1px solid #FED391;
+  background: #fff;
+}
+.promoModule_content .pmCoupon_progress .bar i {
+  background-color: #FED391;
+}
+.promoModule_content .pmCoupon_progress .text {
+  color: #333;
+}
+.pmCoupon_btn.coupon-already .pmCoupon_btnText {
+  border: 1px dashed #FED391;
+  color: #221F31;
+}
+.floatButton-item {
+  background: #DD5D44;
+}
+/*积分兑换*/
+.credits_exchange_panel {
+  margin-bottom: 0.8rem /* 60/75 */;
+  padding-bottom: 0.0133rem;
+}
+.credits_exchange_panel .credits_exchange-header {
+  margin: 0.4rem /* 30/75 */ 0 0.08rem /* 6/75 */;
+}
+.credits_exchange_panel .promoModule_title {
+  color: #FFED9B;
+  font-size: 14px;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+.credits_exchange_panel .promoModule_title:after {
+  display: block;
+  position: absolute;
+  height: 0.5733rem /*127*/;
+  width: 1.6933rem /*127*/;
+  content:'';
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/rule-bg.png') no-repeat center / 1.6933rem;
+  right:0;
+  top:0.1333rem /*5*/;
+}
+.credits_exchange_panel.no-title .promoModule_title {
+  display: none;
+}
+.credits_exchange_panel .exchangeActivityRule {
+  top: 0.1867rem /* 10/75 */;
+  right: 0.2667rem /* 20/75 */;
+  z-index: 3;
+  color: #fff;
+}
+.credits_exchange_panel .exchangeLeft_num {
+  color: #D0B483;
+}
+.credits_exchange_panel .exchange_progressInner {
+  background: #D0B483;
+}
+.credits_exchange_panel .exchangeDoubleBtn {
+  background: #D0B483;
+  color: #fff;
+}
+.credits_exchange_panel .exchangeStatusBox {
+  background-color: rgba(248, 206, 6, 0.6);
+  color: #000;
+}
+.exchangeRuleWrap {
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191108_13730/rule-dialog-bg.png') no-repeat top center / 7.5067rem /* 563/75 */ auto;
+  border: none;
+  width: 7.5067rem /* 563/75 */;
+  height: 8.6267rem /*647/75*/;
+  z-index: 3;
+  box-shadow: 0 0 0.1333rem #9293b4;
+  box-sizing: border-box;
+  padding: 2.4rem /*180/75*/ 0 0.2667rem 0 /*20/75*/;
+}
+.exchangeRuleWrap:after {
+  display: none;
+}
+.exchangeRuleWrap .exchangeRuleTitle,
+.exchangeRuleWrap .exchangeRuleText {
+  position: relative;
+  z-index: 3;
+  color: #2a2b36;
+  width: auto;
+  display: block;
+}
+.exchangeRuleWrap .exchangeRuleText {
+  padding: 0 0.4rem /* 60/75 */ 0 0.4rem /* 70/75 */;
+  border-top: none;
+  color: #2a2b36;
+  max-height: 5.0667rem /*380*/;
+  overflow: auto;
+}
+.exchangeRuleWrap .exchangeClose {
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -1.6rem;
+  width: 1.2267rem /* 92/75 */;
+  height: 1.2267rem /* 92/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-close.png') no-repeat center center / 100% auto;
+}
+.exchangeRuleWrap .exchangeClose .icon-closed {
+  font-size: 0;
+}
+.exchangeRuleWrap .layui-m-layercont {
+  box-shadow: none;
+  border: none;
+}
+/*积分夺宝*/
+.pmJoinPointsTreasure .promoModule_title {
+  position: relative;
+  margin-bottom: 0.08rem /* 6/75 */;
+}
+.pmJoinPointsTreasure .promoModule_title:after {
+  display: block;
+  position: absolute;
+  height: 0.5733rem /*127*/;
+  width: 1.6933rem /*127*/;
+  content:'';
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191113_13839/rule-bg.png') no-repeat center / 1.6933rem;
+  right:0;
+  top:0.1333rem /*5*/;
+}
+.pmJoinPointsTreasure .joinPointsRule {
+  top: 0.1867rem /* 10/75 */;
+  right:0.0667rem /* 2/75 */;
+  z-index: 3;
+  color: #fff;
+}
+.pmJoinPointsTreasure .joinPoints_timerText .cutdownTime {
+  color: #D0B483;
+}
+.pmJoinPointsTreasure .joinPoints_progressText em {
+  color: #D0B483;
+}
+.pmJoinPointsTreasure .joinPointsShares em {
+  color: #D0B483;
+}
+.pmJoinPointsTreasure .joinPoints_progressBar i {
+  background: #FED190;
+}
+.pmJoinPointsTreasure .joinPointsPriceWrap .joinPointsPrice {
+  color: #D0B483;
+}
+.pmJoinPointsTreasure .joinPointsBtn {
+  background: #FED190;
+  color: #352C1E;
+}
+.pmJoinPointsTreasure .treasure-info-btn-wrap {
+  display: none;
+}
+.pmJoinPointsTreasure .treasure-subscribe-wrap {
+  display: none;
+}
+.joinPointsRuleWrap {
+  background: url('https://uidesign.gbtcdn.com/GB/image/2019/20191108_13730/rule-dialog-bg.png') no-repeat top center / 7.5067rem /* 563/75 */ auto;
+  border: none;
+  width: 7.5067rem /* 563/75 */;
+  height: 8.6267rem /*647/75*/;
+  z-index: 3;
+  box-shadow: 0 0 0.1333rem #9293b4;
+  box-sizing: border-box;
+  padding: 2.4rem /*180/75*/ 0 0.2667rem 0 /*20/75*/;
+}
+.joinPointsRuleWrap .joinPointsRuleTitle,
+.joinPointsRuleWrap .joinPointsLayerCont,
+.joinPointsRuleWrap .joinPointsRuleText {
+  position: relative;
+  z-index: 3;
+  border: none;
+  display: block;
+  width: auto;
+  color: #2a2b36;
+}
+.joinPointsRuleWrap .joinPointsRuleTitle dl,
+.joinPointsRuleWrap .joinPointsRuleText dl {
+  color: #2a2b36;
+}
+.joinPointsRuleWrap .joinPointsLayerCont {
+  padding: 0 0.4rem /* 60/75 */ 0 0.4rem /* 70/75 */;
+  border-top: none;
+  color: #2a2b36;
+  max-height: 5.0667rem /*380*/;
+  overflow: auto;
+}
+.joinPointsRuleWrap .activityRuleText,
+.joinPointsRuleWrap .activityRuleTitle {
+  color: #2a2b36;
+  width: auto;
+}
+.joinPointsRuleWrap .layui-m-layercont {
+  box-shadow: none;
+  border: none;
+}
+.joinPointsRuleWrap:after {
+  display: none;
+}
+.joinPointsRuleWrap .oinPointsDl {
+  display: table;
+}
+.joinPointsRuleWrap .oinPointsDt {
+  width: 3rem;
+  vertical-align: top;
+}
+.joinPointsRuleWrap .oinPointsDd {
+  display: table-cell;
+  vertical-align: top;
+  white-space: pre-wrap;
+}
+.joinPointsRuleWrap .joinPointsClose {
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -1.6rem;
+  width: 1.2267rem /* 92/75 */;
+  height: 1.2267rem /* 92/75 */;
+  background: url('https://uidesign.gbtcdn.com/GB/promotion/2019/double11-pre-m/img/icon-close.png') no-repeat center center / 100% auto;
+}
+.js-joinPointsStatus {
+  height: 5.0667rem /*380*/;
+}
+.js-joinPointsStatus .joinPointsClose {
+  bottom: -2.6667rem;
+}
+.joinPointsRuleWrap .joinPointsClose .icon-closed {
+  font-size: 0;
+}
+.joinPointsRuleWrap .layer-statusContent2 {
+  position: relative;
+  z-index: 3;
+}
+.lazyModule_content.hasTitle .pmMultiGoods_content,
+.lazyModule_content.hasTitle .pmMultiGoodsList {
+  padding-top: 0;
+}
+.lazyModule_content.hasTitle p.price span {
+  color: #ff6701;
+}
